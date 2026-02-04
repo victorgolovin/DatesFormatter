@@ -5,21 +5,17 @@ public class DatesFormatter {
     public static void main(String[] args) {
         Date currentDate = new Date();
 
-        SimpleDateFormat currentMonthFormat = new SimpleDateFormat("MMMM");
-        String currentMonth = currentMonthFormat.format(currentDate);
-
-        System.out.println("Current month: " + currentMonth);
-
+        SimpleDateFormat MonthFormat = new SimpleDateFormat("MMMM");
+        String Month = MonthFormat.format(currentDate);
 
         SimpleDateFormat dayOfWeekFormat = new SimpleDateFormat("EEEE");
         String dayOfWeek = dayOfWeekFormat.format(currentDate);
 
+        SimpleDateFormat dayOfMonthFormat = new SimpleDateFormat("d");
+        String dayOfMonth = dayOfMonthFormat.format(currentDate);
+
+        System.out.println("Current month: " + Month);
         System.out.println("Current day of the week: " + dayOfWeek);
-
-
-        SimpleDateFormat dayInMonthFormat = new SimpleDateFormat("dd");
-        String dayInMonth = dayInMonthFormat.format(currentDate);
-
-        System.out.println("Current day in month: " + dayInMonth);
+        System.out.println("Current day in month: " + dayOfMonth);
     }
 }
