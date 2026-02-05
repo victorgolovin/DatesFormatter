@@ -17,5 +17,6 @@ public class DatesFormatter {
         System.out.println("Current month: " + Month);
         System.out.println("Current day of the week: " + dayOfWeek);
         System.out.println("Current day in month: " + dayOfMonth);
+        
     }
 }
